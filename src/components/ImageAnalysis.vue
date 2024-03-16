@@ -171,6 +171,7 @@ const onDetectTextClick = async () => {
                   </tr>
                 </thead>
                 <tbody
+                  v-bind:key="text"
                   v-for="text in images[selectedImageIndex].texResult.Blocks"
                 >
                   <tr v-if="text.BlockType === 'LINE'">
